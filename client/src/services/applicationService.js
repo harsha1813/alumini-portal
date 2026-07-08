@@ -1,8 +1,12 @@
 
 import axios from "axios";
 
+// const API =
+// "http://localhost:5000/api/applications";
+
 const API =
-"http://localhost:5000/api/applications";
+`${import.meta.env.VITE_API_URL}/applications`;
+
 
 const token = () =>
 JSON.parse(

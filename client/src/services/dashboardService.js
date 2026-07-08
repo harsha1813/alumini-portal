@@ -1,7 +1,10 @@
 import axios from "axios";
 
+// const API_URL =
+// "http://localhost:5000/api/dashboard";
+
 const API_URL =
-"http://localhost:5000/api/dashboard";
+`${import.meta.env.VITE_API_URL}/dashboard`;
 
 export const getDashboardStats = async () => {
 

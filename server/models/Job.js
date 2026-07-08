@@ -44,6 +44,10 @@ const jobSchema = new mongoose.Schema(
         type: String
       }
     ],
+    education: {
+  type: String,
+  default: ""
+},
 
     description: {
       type: String,

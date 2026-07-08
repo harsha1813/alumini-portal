@@ -22,7 +22,10 @@
 // };
 import axios from "axios";
 
-const API = "http://localhost:5000/api/users";
+// const API = "http://localhost:5000/api/users";
+
+const API =
+`${import.meta.env.VITE_API_URL}/users`;
 
 const token = () =>
   JSON.parse(localStorage.getItem("userInfo"))?.token;
