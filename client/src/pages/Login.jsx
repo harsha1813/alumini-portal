@@ -93,33 +93,67 @@ function Login() {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    try {
-      const data = await loginUser(formData);
+  //   try {
+  //     const data = await loginUser(formData);
 
-      localStorage.setItem(
-        "userInfo",
-        JSON.stringify(data)
-      );
+  //     localStorage.setItem(
+  //       "userInfo",
+  //       JSON.stringify(data)
+  //     );
 
-      alert("Login Successful");
+  //     alert("Login Successful");
 
-      if (data.role === "student") {
-        navigate("/student-dashboard");
-      }
-      else if (data.role === "alumni") {
-        navigate("/alumni-dashboard");
-      }
-      else if (data.role === "admin") {
-        navigate("/admin-dashboard");
-      }
+  //     if (data.role === "student") {
+  //       navigate("/student-dashboard");
+  //     }
+  //     else if (data.role === "alumni") {
+  //       navigate("/alumni-dashboard");
+  //     }
+  //     else if (data.role === "admin") {
+  //       navigate("/admin-dashboard");
+  //     }
 
-    } catch (error) {
-      alert("Login Failed");
+  //   } catch (error) {
+  //     alert("Login Failed");
+  //   }
+  // };
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const data = await loginUser(formData);
+
+    localStorage.setItem(
+      "userInfo",
+      JSON.stringify(data)
+    );
+
+    alert("Login Successful");
+
+    if (data.role === "student") {
+      navigate("/student-dashboard");
+    } else if (data.role === "alumni") {
+      navigate("/alumni-dashboard");
+    } else if (data.role === "admin") {
+      navigate("/admin-dashboard");
     }
-  };
+
+  } catch (error) {
+
+    if (error.response) {
+      // Message sent by your backend
+      alert(error.response.data.message);
+    } else {
+      alert("Server is not responding.");
+    }
+
+  }
+};
 
 
   const styles = {
