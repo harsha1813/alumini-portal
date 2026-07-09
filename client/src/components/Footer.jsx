@@ -22,8 +22,8 @@ function Footer() {
           </h2>
 
           <p>
-            Connecting students and alumni through
-            networking, mentorship and career opportunities.
+            Connecting students and alumni through networking,
+            mentorship and career opportunities.
           </p>
 
           <div className="socials">
@@ -47,6 +47,7 @@ function Footer() {
           </div>
 
         </div>
+
 
 
         {/* Quick Links */}
@@ -73,6 +74,7 @@ function Footer() {
         </div>
 
 
+
         {/* Resources */}
         <div className="footer-section">
 
@@ -86,6 +88,7 @@ function Footer() {
         </div>
 
 
+
         {/* Contact */}
         <div className="footer-section">
 
@@ -96,14 +99,19 @@ function Footer() {
             support@alumniportal.com
           </p>
 
-          <a href="tel:+919493817813" className="contact-link">
-  <FaPhone />
-  +91 9493817813
-</a>
+          <a
+            href="tel:+919493817813"
+            className="contact-link"
+          >
+            <FaPhone />
+            +91 9493817813
+          </a>
 
         </div>
 
+
       </div>
+
 
 
       <div className="footer-bottom">
@@ -118,287 +126,287 @@ function Footer() {
 
 
 
-      <style>{`
 
-        .footer {
+<style>{`
 
-          background:
-          linear-gradient(
-            135deg,
-            #0f172a,
-            #111827,
-            #1e293b
-          );
+.footer {
 
-          color:white;
+  background:
+  linear-gradient(
+    135deg,
+    #0f172a,
+    #111827,
+    #1e293b
+  );
 
-          padding:35px 8% 18px;
+  color:white;
 
-          margin-top:50px;
+  padding:15px 5% 8px;
 
-          position:relative;
+  margin-top:25px;
 
-          overflow:hidden;
+  position:relative;
 
-        }
-          .contact-link {
-  color: #cbd5e1;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  margin: 10px 0;
-  transition: .3s;
-}
+  overflow:hidden;
 
-.contact-link:hover {
-  color: #60a5fa;
-  transform: translateX(5px);
 }
 
 
 
-        .footer::before {
+.footer::before {
 
-          content:"";
+  content:"";
 
-          position:absolute;
+  position:absolute;
 
-          width:220px;
+  width:120px;
 
-          height:220px;
+  height:120px;
 
-          background:#3b82f6;
+  background:#3b82f6;
 
-          opacity:.12;
+  opacity:.08;
 
-          filter:blur(70px);
+  filter:blur(50px);
 
-          top:-60px;
+  top:-30px;
 
-          right:-60px;
+  right:-30px;
 
-        }
+}
 
 
 
-        .footer-container {
+.footer-container {
 
-          display:grid;
+  display:grid;
 
-          grid-template-columns:
-          repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns:
+  1.4fr 1fr 1fr 1fr;
 
-          gap:30px;
+  gap:18px;
 
-          position:relative;
+  position:relative;
 
-          z-index:1;
+  z-index:1;
 
-        }
+}
 
 
 
-        .footer-section h2 {
+/* Brand */
 
-          font-size:24px;
+.footer-section h2 {
 
-          margin-bottom:12px;
+  font-size:16px;
 
-        }
+  margin:0 0 5px;
 
+}
 
 
-        .footer-section h2 span {
 
-          color:#60a5fa;
+.footer-section h2 span {
 
-        }
+  color:#60a5fa;
 
+}
 
 
-        .footer-section h3 {
 
-          font-size:17px;
+.footer-section h3 {
 
-          margin-bottom:15px;
+  font-size:12px;
 
-          color:#93c5fd;
+  margin-bottom:7px;
 
-        }
+  color:#93c5fd;
 
+}
 
 
-        .footer-section p {
 
-          color:#cbd5e1;
+.footer-section p {
 
-          line-height:1.5;
+  color:#cbd5e1;
 
-          font-size:14px;
+  line-height:1.3;
 
-          display:flex;
+  font-size:11px;
 
-          gap:8px;
+  display:flex;
 
-          align-items:center;
+  align-items:center;
 
-          margin:10px 0;
+  gap:5px;
 
-        }
+  margin:3px 0;
 
+}
 
 
-        .brand p {
 
-          max-width:260px;
+.brand p {
 
-        }
+  max-width:200px;
 
+}
 
 
-        .footer-section a {
 
-          display:flex;
+/* Links */
 
-          align-items:center;
+.footer-section a {
 
-          gap:8px;
+  display:flex;
 
-          color:#cbd5e1;
+  align-items:center;
 
-          text-decoration:none;
+  gap:5px;
 
-          margin-bottom:10px;
+  color:#cbd5e1;
 
-          font-size:14px;
+  text-decoration:none;
 
-          transition:.3s;
+  font-size:11px;
 
-        }
+  margin-bottom:4px;
 
+  transition:.3s;
 
+}
 
-        .footer-section a:hover {
 
-          color:#60a5fa;
 
-          transform:translateX(5px);
+.footer-section a:hover {
 
-        }
+  color:#60a5fa;
 
+  transform:translateX(3px);
 
+}
 
-        .socials {
 
-          display:flex;
 
-          gap:12px;
+.contact-link {
 
-          margin-top:18px;
+  margin-top:4px;
 
-        }
+}
 
 
 
-        .socials a {
+/* Social Icons */
 
-          width:35px;
+.socials {
 
-          height:35px;
+  display:flex;
 
-          border-radius:50%;
+  gap:8px;
 
-          display:flex;
+  margin-top:8px;
 
-          justify-content:center;
+}
 
-          align-items:center;
 
-          background:
-          rgba(255,255,255,.1);
 
-          font-size:17px;
+.socials a {
 
-          transition:.3s;
+  width:25px;
 
-        }
+  height:25px;
 
+  border-radius:50%;
 
+  display:flex;
 
-        .socials a:hover {
+  justify-content:center;
 
-          background:#3b82f6;
+  align-items:center;
 
-          color:white;
+  background:rgba(255,255,255,.1);
 
-          transform:translateY(-4px);
+  font-size:12px;
 
-        }
+}
 
 
 
-        .footer-bottom {
+.socials a:hover {
 
-          margin-top:25px;
+  background:#2563eb;
 
-          text-align:center;
+  color:white;
 
-        }
+}
 
 
 
-        .footer-bottom hr {
+/* Bottom */
 
-          border:none;
+.footer-bottom {
 
-          height:1px;
+  margin-top:10px;
 
-          background:#334155;
+  text-align:center;
 
-          margin-bottom:15px;
+}
 
-        }
 
 
+.footer-bottom hr {
 
-        .footer-bottom p {
+  border:none;
 
-          font-size:13px;
+  height:1px;
 
-          color:#94a3b8;
+  background:#334155;
 
-        }
+  margin-bottom:6px;
 
+}
 
 
-        @media(max-width:600px) {
 
-          .footer {
+.footer-bottom p {
 
-            padding:30px 5% 15px;
+  font-size:10px;
 
-          }
+  color:#94a3b8;
 
+  margin:0;
 
-          .footer-container {
+}
 
-            gap:25px;
 
-          }
 
+/* Responsive */
 
-          .footer-section h2 {
+@media(max-width:800px){
 
-            font-size:22px;
+  .footer-container{
 
-          }
+    grid-template-columns:repeat(2,1fr);
 
-        }
+  }
 
+}
 
-      `}</style>
+
+
+@media(max-width:500px){
+
+  .footer-container{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+
+
+`}</style>
 
 
     </footer>
